@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <title>Skoliose Analyse</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1f2937" />
+  <link rel="stylesheet" href="css/base.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="app-header">
+      <button id="btn-back" class="header-btn" type="button">←</button>
+      <div class="header-center">
+        <h1 id="app-title">Skoliose Analyse</h1>
+        <div id="screen-title">Startseite</div>
+      </div>
+      <button id="btn-settings" class="header-btn" type="button">⚙</button>
+    </header>
+
+    <main id="screen-container"></main>
+  </div>
+
+  <script src="js/constants.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/guards.js"></script>
+
+  <script src="js/data/patientStore.js"></script>
+  <script src="js/data/examStore.js"></script>
+  <script src="js/data/imageStore.js"></script>
+  <script src="js/data/analysisStore.js"></script>
+  <script src="js/data/reportStore.js"></script>
+  <script src="js/data/settingsStore.js"></script>
+  <script src="js/data/thermalStore.js"></script>
+  <script src="js/data/sessionStore.js"></script>
+
+  <script src="js/camera/poseSequence.js"></script>
+  <script src="js/camera/ampelsystem.js"></script>
+  <script src="js/camera/overlayRenderer.js"></script>
+  <script src="js/camera/cameraCapture.js"></script>
+  <script src="js/camera/camera.js"></script>
+
+  <script src="js/analysis/analysisService.js"></script>
+  <script src="js/report/reportOverlayRenderer.js"></script>
+
+  <script src="screens/home.screen.js"></script>
+  <script src="screens/patients.screen.js"></script>
+  <script src="screens/patientForm.screen.js"></script>
+  <script src="screens/examStart.screen.js"></script>
+  <script src="screens/capture.screen.js"></script>
+  <script src="screens/review.screen.js"></script>
+  <script src="screens/analysis.screen.js"></script>
+  <script src="screens/summary.screen.js"></script>
+  <script src="screens/details.screen.js"></script>
+  <script src="screens/spine3d.screen.js"></script>
+  <script src="screens/images.screen.js"></script>
+  <script src="screens/report.screen.js"></script>
+  <script src="screens/comparison.screen.js"></script>
+  <script src="screens/settings.screen.js"></script>
+  <script src="screens/thermal.screen.js"></script>
+
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
